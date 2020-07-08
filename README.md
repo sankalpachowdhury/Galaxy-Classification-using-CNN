@@ -1,3 +1,3 @@
 # Galaxy-Classification-using-CNN
 
-This is a collaborative project
+-Sayan Hazra & Sankalpa Chowdhury
