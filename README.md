@@ -15,7 +15,7 @@ Source :
 
 Step 1: Data Importing:  
 
-        1. Import Data 
+        1. Import Data --> 500 images for Train set || 100 for test set
         
         2. Labeling part.
         
@@ -41,16 +41,41 @@ Step 3: Model Architecture :
 
         sequential Keras model
         
-        model --> input layer : 69, 69, 3 
+        model --> input layer : 69, 69, 3 ~ input_shape=(IMG_SHAPE[0], IMG_SHAPE[1], 3))
         
-        layer 1 : Conv3d :  69, 69, 3  filter size: ??
+        layer 1 : Conv2d :  32  filter size: 6, 6
         
-        layer 2 : Pooling : 
+        layer 2 : Conv2d :  64 filter size : (3,3)
         
-        layer 3 : Conv
+        layer * : Pooling : 20, 20
         
-        layer 4 : Pooling
+        layer 3 : Conv2d :  128 filter size: (3, 3)
         
-        layer 5 : Conv
+        layer * : Conv2d :  128 filter size: (3, 3)
         
-        layer 6 : Pooling
+        layer 4 : Pooling : 2, 2
+        
+        layer 6 : Flatten : 
+        
+        layer 7 : Fc 1:     512
+        
+        layer 8 : Fc 2:     512
+        
+        layer 9 : Output layer: softmax -- 37 
+        
+        
+   
+Hyperparameters: 
+
+Minibatch size: 64
+Epochs: 10
+Steps per Epochs : 8
+
+Optimizer : Adam // RMSProp
+
+Learning Rate : 0.001
+
+Loss function : Categorical Cross Entropy
+
+
+
