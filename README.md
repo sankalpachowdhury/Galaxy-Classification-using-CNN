@@ -76,7 +76,7 @@ Loss function : Categorical Cross Entropy
 
 ![img1](Images/Decisiontree.PNG)
 ![img2](Images/Decisiontree2.PNG)
-![tuningfork](http://cdn.sci-news.com/images/enlarge6/image_7280e-Hubble-Tuning-Fork.jpg)
+![tuningfork](hubble_t.jpg)
 
 # **How to use this repository?**
 
