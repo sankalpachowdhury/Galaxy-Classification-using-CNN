@@ -81,6 +81,7 @@ Loss function : Categorical Cross Entropy
 ![img1](Images/Decisiontree.PNG)
 ![img2](Images/Decisiontree2.PNG)
 
+# **How to use this repository?**
 
 # **Dataset**
 
