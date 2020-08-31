@@ -1,13 +1,9 @@
-# Galaxy-Classification-using-CNN
+# **Galaxy-Classification-using-CNN**
 
--Sayan Hazra & Sankalpa Chowdhury
-
-Imp links:
-1. https://blog.galaxyzoo.org/category/paper/
-2. Kaggle Galaxy zoo competition guide: https://github.com/benanne/kaggle-galaxies
+Authors [Sayan Hazra](https://github.com/sayan0506) & [Sankalpa Chowdhury](https://github.com/sankalpachowdhury)
 
 
-#Problem Statement :
+# Problem Statement :
 **Classify Galaxy**
 
 Data : Image file (.jpeg) of 424 x 424 RGB
@@ -80,6 +76,7 @@ Loss function : Categorical Cross Entropy
 
 ![img1](Images/Decisiontree.PNG)
 ![img2](Images/Decisiontree2.PNG)
+![tuningfork](http://cdn.sci-news.com/images/enlarge6/image_7280e-Hubble-Tuning-Fork.jpg)
 
 # **How to use this repository?**
 
@@ -96,3 +93,5 @@ Loss function : Categorical Cross Entropy
 # **Analysis**
 
 # **Reference**
+1. https://blog.galaxyzoo.org/category/paper/
+2. Kaggle Galaxy zoo competition guide: https://github.com/benanne/kaggle-galaxies
