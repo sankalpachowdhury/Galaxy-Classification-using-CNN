@@ -6,6 +6,8 @@ Authors [Sayan Hazra](https://github.com/sayan0506) & [Sankalpa Chowdhury](https
 # Problem Statement :
 **Classify Galaxy**
 
+Understanding how and why we are here is one of the fundamental questions for the human race. Part of the answer to this question lies in the origins of galaxies, such as our own Milky Way. Yet questions remain about how the Milky Way (or any of the other ~100 billion galaxies in our Universe) was formed and has evolved. Galaxies come in all shapes, sizes and colors: from beautiful spirals to huge ellipticals. Understanding the distribution, location and types of galaxies as a function of shape, size, and color are critical pieces for solving this puzzle. [(Source)](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/overview/description)
+
 Data : Image file (.jpeg) of 424 x 424 RGB
 Source : 
 
@@ -76,7 +78,7 @@ Loss function : Categorical Cross Entropy
 
 ![img1](Images/Decisiontree.PNG)
 ![img2](Images/Decisiontree2.PNG)
-![tuningfork](hubble_t.jpg)
+![tuningfork](Images/hubble_t.jpg)
 
 # **How to use this repository?**
 
