@@ -98,8 +98,7 @@ The Dataset is hosted on a kaggle challenge. [Galazy Zoo](https://www.kaggle.com
 
 The Galaxy zoo 2 survey was done based on some interconnected decision steps of significant questions, as shown: 
 ![img1](Images/Decisiontree.PNG)
-Paths and the decision tree
-As a result, at each node or question, the total initial probability of a classification will sum to 1.0. Those initial probabilities are then weighted as follows.
+
 
 **Weighting the responses**
 
