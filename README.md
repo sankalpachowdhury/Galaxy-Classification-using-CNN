@@ -78,4 +78,7 @@ Learning Rate : 0.001
 Loss function : Categorical Cross Entropy
 
 
+![img1](Images/Decision tree.PNG)
+
+
 
