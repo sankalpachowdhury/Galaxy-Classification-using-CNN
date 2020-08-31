@@ -82,4 +82,16 @@ Loss function : Categorical Cross Entropy
 ![img2](Images/Decisiontree2.PNG)
 
 
+# **Dataset**
 
+# **Preprocessing**
+
+# **Model**
+
+# **Training**
+
+# **Testing**
+
+# **Analysis**
+
+# **Reference**
