@@ -4,10 +4,16 @@ Authors [Sayan Hazra](https://github.com/sayan0506) & [Sankalpa Chowdhury](https
 
 
 # Problem Statement :
-**Classify Galaxy**
-
 Understanding how and why we are here is one of the fundamental questions for the human race. Part of the answer to this question lies in the origins of galaxies, such as our own Milky Way. Yet questions remain about how the Milky Way (or any of the other ~100 billion galaxies in our Universe) was formed and has evolved. Galaxies come in all shapes, sizes and colors: from beautiful spirals to huge ellipticals. Understanding the distribution, location and types of galaxies as a function of shape, size, and color are critical pieces for solving this puzzle. [(Source)](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/overview/description)
 
+With each passing day telescopes around and above the Earth capture more and more images of distant galaxies. As better and bigger telescopes continue to collect these images, the datasets begin to explode in size. In order to better understand how the different shapes (or morphologies) of galaxies relate to the physics that create them, such images need to be sorted and classified.
+
+Galaxies in this set have already been classified once through the help of hundreds of thousands of volunteers, who collectively classified the shapes of these images by eye in a successful citizen science crowdsourcing project. However, this approach becomes less feasible as data sets grow to contain of hundreds of millions (or even billions) of galaxies. Here we implemet a deep learning model to classify huge number of galaxies with high accuracy. 
+
+Based on the Galxy zoo 2 survey and referenced decision tree, the training data is segregated in order to build the model which can classify 3 main types of galaxies
+1. Elliptical, 2. Lenticular, 3. Spiral
+
+**Classify Galaxy**
 Data : Image file (.jpeg) of 424 x 424 RGB
 Source : 
 
@@ -83,6 +89,44 @@ Loss function : Categorical Cross Entropy
 # **How to use this repository?**
 
 # **Dataset**
+Data preperation and segrigation are done based on decision tree referenced from [Kaggle](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/overview/the-galaxy-zoo-decision-tree).
+
+* **Dataset Source:** 
+The Dataset is hosted on a kaggle challenge. [Galazy Zoo](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data)
+
+* **Decision tree**
+The Galaxy zoo 2 survey was done based on some interconnected decision steps of significant questions, as shown: 
+![img1](Images/Decisiontree.PNG)
+Paths and the decision tree
+As a result, at each node or question, the total initial probability of a classification will sum to 1.0. Those initial probabilities are then weighted as follows.
+
+Weighting the responses
+The values of the morphology categories in the solution file are computed as follows. For the first set of responses (smooth, features/disk, star/artifact), the values in each category are simply the likelihood of the galaxy falling in each category. These values sum to 1.0. For each subsequent question, the probabilities are first computed (these will sum to 1.0) and then multiplied by the value which led to that new set of responses. 
+
+Here is a simplified example: a galaxy had 80% of users identify it as smooth, 15% as having features/disk, and 5% as a star/artifact.
+
+Class1.1 = 0.80
+
+Class1.2 = 0.15
+
+Class1.3 = 0.05
+
+For the 80% of users that identified the galaxy as "smooth", they also recorded responses for the galaxy's relative roundness. These votes were for 50% completely round, 25% in-between, and 25% cigar-shaped. The values in the solution file are thus:
+
+Class 7.1 = 0.80 * 0.50 = 0.40
+
+Class 7.2 = 0.80 * 0.25 = 0.20
+
+Class 7.3 = 0.80 * 0.25 = 0.20
+
+The reason for this weighting is to emphasize that a good solution must get the high-level, large-scale morphology categories correct. The best solutions, though, will also have high levels of accuracy on the detailed solutions that are further down the decision tree.
+
+
+* **Image Data** [Source](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data?select=images_training_rev1.zip) contains 65000 images of galaxies.
+
+* **Labels**
+
+* 
 
 # **Preprocessing**
 
