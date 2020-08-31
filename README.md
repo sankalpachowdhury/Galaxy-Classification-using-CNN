@@ -91,15 +91,18 @@ Loss function : Categorical Cross Entropy
 Data preperation and segrigation are done based on decision tree referenced from [Kaggle](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/overview/the-galaxy-zoo-decision-tree).
 
 * **Dataset Source:** 
+
 The Dataset is hosted on a kaggle challenge. [Galazy Zoo](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data)
 
-* **Decision tree**[Galaxy zoo2 Paper](https://arxiv.org/abs/1308.3496)
+* **Decision tree** [Galaxy zoo2 Paper](https://arxiv.org/abs/1308.3496)
+
 The Galaxy zoo 2 survey was done based on some interconnected decision steps of significant questions, as shown: 
 ![img1](Images/Decisiontree.PNG)
 Paths and the decision tree
 As a result, at each node or question, the total initial probability of a classification will sum to 1.0. Those initial probabilities are then weighted as follows.
 
 **Weighting the responses**
+
 For the first set of responses (smooth, features/disk, star/artifact), the values in each category are simply the likelihood of the galaxy falling in each category, are summed to 1.0. For each subsequent question, the probabilities are first computed (these will sum to 1.0) and then multiplied by the value which led to that new set of responses. 
 
 Example: Suppose for a galaxy 80% of users identify it as smooth, 15% as having features/disk, and 5% as a star/artifact.
