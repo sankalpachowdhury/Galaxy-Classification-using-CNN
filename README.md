@@ -263,9 +263,9 @@ The two models are implemented using Keras and Tensorflow. The details of model 
 * Training is implemented using fit_generator
 
 > *Arguments :*
-* **Training data**: train_generator 
-* **Validation data**: validation_generator
-* **Epochs**: 50
+* **Training data**: train_generator (Contains train data) 
+* **Validation data**: validation_generator (Contains validation data)
+* **Epochs**: 140 (Because google colab buffer memory restriction, the model was run for two times sequentially (70 + 70).
 * **Callbacks**: Custom_callback, Model_checkpoint 
 * **Verbose**: 1
 
@@ -274,17 +274,14 @@ History of the model training is stored for the analysis.
 >Early Stopping object, where earlystopping baseline was taken 0.2791 for validation loss, but not used
 >Instead, custom callback was implemented for the model
 
-Hyperparameters: 
+**Hyperparameters:** 
 
-Minibatch size: 64
-Epochs: 10
-Steps per Epochs : 8
-
-Optimizer : Adam // RMSProp
-
-Learning Rate : 0.001
-
-Loss function : Categorical Cross Entropy
+* **Minibatch size: 64*
+* **Epochs: 10**
+* **Steps per Epochs : 8**
+* **Optimizer :** ***Adam***
+* **Learning Rate : 0.001**
+* **Loss function :** ***Categorical Cross Entropy***
 
 # **Testing**
 
