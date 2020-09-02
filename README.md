@@ -13,7 +13,87 @@ Galaxies in this set have already been classified once through the help of hundr
 
 # **How to use this repository?**
 
+To use the repository, clone the repository using 
+`
+$ git clone https://github.com/sankalpachowdhury/Galaxy-Classification-using-CNN.git
+`
 
+**File Structure**
+```
+├── File_Structure
+│   └── generating_git_file_structure.ipynb
+├── Galaxy-Classification CNN models
+│   ├── Galaxy_classification_CNN_final_model_26_08_20.ipynb
+│   └── Galaxy_classification_CNN_model_comparisons_26_08_20.ipynb
+├── Images
+│   ├── Decisiontree2.PNG
+│   ├── Decisiontree.PNG
+│   ├── final_model.png
+│   ├── hubble_t.jpg
+│   └── README.md
+├── LICENSE
+├── Model testing
+│   ├── 24_08_20_Model2_Galaxy_classification_Early_St_&_MCh.ipynb
+│   ├── 25_08_20_Model2_Galaxy_classification_Early_St_&_MCh(2).ipynb
+│   ├── Copy_of_Copy_of_Model1_Galaxy_classification_sankalpa_v5.ipynb
+│   ├── Copy_of_Model1_Galaxy_classification_augmentation.ipynb
+│   ├── Copy_of_Model1_Galaxy_classification_sankalpa_v3.ipynb
+│   ├── Copy_of_Model1_Galaxy_classification_sankalpa_v5.ipynb
+│   ├── Copy_of_Model2_Galaxy_classification_Early_St_&_MCh.ipynb
+│   ├── Copy_of_Untitled35.ipynb
+│   ├── data_augmentation.ipynb
+│   ├── Decisiontree_to_3classes.ipynb
+│   ├── Decisiontree_to_3classes_sankalpa_v1.ipynb
+│   ├── Galaxy_clasification.ipynb
+│   ├── Galaxy_classification_sankalpa_v2.ipynb
+│   ├── Model1_Galaxy_classification_sankalpa_v2.ipynb
+│   ├── Model1_Galaxy_classification_sankalpa_v3-2.ipynb
+│   ├── Model1_Galaxy_classification_sankalpa_v3.ipynb
+│   ├── Model1_Galaxy_classification_sankalpa_v4.ipynb
+│   ├── Model1_Galaxy_classification_sankalpa_v5.ipynb
+│   ├── Model2_Galaxy_classification_Early_St_&_MCh.ipynb
+│   ├── Model2_of_Galaxy_classification_sankalpa_v2.ipynb
+│   ├── new
+│   └── SayanDa_version.ipynb
+├── Python files
+│   ├── All_in_one.py
+│   ├── CNN_model.py
+│   ├── data_augmentation.py
+│   ├── data_segmentation.py
+│   ├── data_storing.py
+│   ├── image_generator.py
+│   ├── images_visualization.py
+│   ├── intermediate_activation_vis.py
+│   ├── model_compilation_training.py
+│   ├── model_evaluation_visualization.py
+│   └── modules.py
+├── README.md
+└── Weights and bias
+    ├── best_model-27-08-2020-final.h5
+    └── best_model (2).h5
+```
+
+**Galaxy-Classification CNN models** folder contains the Notebooks corrosponding to the finalized models.
+
+* Galaxy_classification_CNN_final_model_26_08_20.ipynb -- Final model
+* Galaxy_classification_CNN_model_comparisons_26_08_20.ipynb -- Model comparison
+
+**Model testing** contains all tested models and other notebooks.
+
+**Python files**
+These files can be used to run the final Galaxy Classifier model locally:
+
+|   ├── All_in_one.py -- Contains the the implementation of all the steps corresponding to the final model building processes (mentioned below) 
+│   ├── CNN_model.py -- Contains CNN model creation
+│   ├── data_augmentation.py -- Data augmentation [For this Augmentor class needed (! pip install Augmentor]
+│   ├── data_segmentation.py
+│   ├── data_storing.py
+│   ├── image_generator.py
+│   ├── images_visualization.py
+│   ├── intermediate_activation_vis.py
+│   ├── model_compilation_training.py
+│   ├── model_evaluation_visualization.py
+│   └── modules.py
 
 # **Dataset**
 Data preperation and segrigation are done based on decision tree referenced from [Kaggle](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/overview/the-galaxy-zoo-decision-tree).
