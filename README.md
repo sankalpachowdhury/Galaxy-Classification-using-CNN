@@ -125,11 +125,21 @@ Based on that referenced decision tree concept the images are segregated into th
 
 * **Image Data** [Source](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data?select=images_training_rev1.zip) contains 65000 images of galaxies.
 
-* **Labels** Based on the survey as recorded in the [training_solutions_rev1.csv](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data?select=training_solutions_rev1.zip) the images are classified into three mentioned category with the help of referenced concepts in **weighting and responses** section, and the following decision tree architecture mentioned in the Galaxy zoo 2 paper.
+* **Labels** 
 
-![Decision tree](Images/Decisiontree2.PNG)* 
+Based on the survey as recorded in the [training_solutions_rev1.csv](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data?select=training_solutions_rev1.zip) the galaxy ids are classified into three mentioned category with the help of referenced concepts in **weighting and responses** section, and the following decision tree architecture mentioned in the Galaxy zoo 2 paper.
+
+**NOTE: *Galaxy-IDs are used to map images to the respective labels.* ** 
+
+![Decision tree](Images/Decisiontree2.PNG)
+
+* **Train-Test split**
+
+The dataset of images is segmented into `Train` and `Validation` sets. ~90% of the images are taken into `Training` set and the remaining for the `Validation` set.
 
 # **Preprocessing**
+
+
 
 # **Model**
 
