@@ -11,77 +11,6 @@ With each passing day telescopes around and above the Earth capture more and mor
 Galaxies in this set have already been classified once through the help of hundreds of thousands of volunteers, who collectively classified the shapes of these images by eye in a successful citizen science crowdsourcing project. However, this approach becomes less feasible as data sets grow to contain of hundreds of millions (or even billions) of galaxies. Here we implemet a deep learning model to classify huge number of galaxies with high accuracy. 
 
 
-
-**Classify Galaxy**
-Data : Image file (.jpeg) of 424 x 424 RGB
-Source : 
-
-Step 1: Data Importing:  
-
-        1. Import Data --> 500 images for Train set || 100 for test set
-        
-        2. Labeling part.
-        
-        3. Train test split
-
-Step 2: Data Pre-processing :
-
-        1. Resize images down to A[0] 69, 69, 3
-        
-        2. Rotation (Uniform) random [0 ,360] (degree)
-        
-        3. Translation --> random uniform -4 to +4
-        
-        4. Zoom --> 1/1.3 to 1.3 Log uniform
-        
-        5. Flip --> Yes or No, Bernoulli sequence
-        
-        6. * Colour Peturbation (PCA) and Realtime Augmentation
-        
-        7. Centering and rescaling --> 
-        
-Step 3: Model Architecture :
-
-        sequential Keras model
-        
-        model --> input layer : 69, 69, 3 ~ input_shape=(IMG_SHAPE[0], IMG_SHAPE[1], 3))
-        
-        layer 1 : Conv2d :  32  filter size: 6, 6
-        
-        layer 2 : Conv2d :  64 filter size : (3,3)
-        
-        layer * : Pooling : 20, 20
-        
-        layer 3 : Conv2d :  128 filter size: (3, 3)
-        
-        layer * : Conv2d :  128 filter size: (3, 3)
-        
-        layer 4 : Pooling : 2, 2
-        
-        layer 6 : Flatten : 
-        
-        layer 7 : Fc 1:     512
-        
-        layer 8 : Fc 2:     512
-        
-        layer 9 : Output layer: softmax -- 37 
-        
-        
-   
-Hyperparameters: 
-
-Minibatch size: 64
-Epochs: 10
-Steps per Epochs : 8
-
-Optimizer : Adam // RMSProp
-
-Learning Rate : 0.001
-
-Loss function : Categorical Cross Entropy
-
-
-
 # **How to use this repository?**
 
 # **Dataset**
@@ -313,14 +242,27 @@ The galaxy classification problem is solved by Deep Learning classification meth
 >
 >Softmax layer: No. of units: 3, Activation: Softmax
 
-The two models are implemented using Keras and Tensorflow. The details of model implementations and performances comparison can be found in the [Galaxy_classification_CNN_model_comparisons_26_08_20](https://github.com/sankalpachowdhury/Galaxy-Classification-using-CNN/blob/master/Galaxy-Classification%20CNN%20models/Galaxy_classification_CNN_model_comparisons_26_08_20.ipynb). The model trainings are visualized in the colab notebook, which indicates that the *Model 2* performance is much stable than *Model 1*, which validates *Model 2* to be finalized. The implementation of *Model 2* has been done in a seperate notebook [Galaxy_classification_CNN_final_model_26_08_20](https://github.com/sankalpachowdhury/Galaxy-Classification-using-CNN/blob/master/Galaxy-Classification%20CNN%20models/Galaxy_classification_CNN_final_model_26_08_20.ipynb).
+The two models are implemented using Keras and Tensorflow. The details of model implementations and performances comparison can be found in the [Galaxy_classification_CNN_model_comparisons_26_08_20](https://github.com/sankalpachowdhury/Galaxy-Classification-using-CNN/blob/master/Galaxy-Classification%20CNN%20models/Galaxy_classification_CNN_model_comparisons_26_08_20.ipynb). 
 
 # **Training**
 
+Hyperparameters: 
+
+Minibatch size: 64
+Epochs: 10
+Steps per Epochs : 8
+
+Optimizer : Adam // RMSProp
+
+Learning Rate : 0.001
+
+Loss function : Categorical Cross Entropy
 
 # **Testing**
 
 # **Analysis**
+
+The model trainings are visualized in the colab notebook, which indicates that the *Model 2* performance is much stable than *Model 1*, which validates *Model 2* to be finalized. The implementation of *Model 2* has been done in a seperate notebook [Galaxy_classification_CNN_final_model_26_08_20](https://github.com/sankalpachowdhury/Galaxy-Classification-using-CNN/blob/master/Galaxy-Classification%20CNN%20models/Galaxy_classification_CNN_final_model_26_08_20.ipynb).
 
 # **Reference**
 1. https://blog.galaxyzoo.org/category/paper/
