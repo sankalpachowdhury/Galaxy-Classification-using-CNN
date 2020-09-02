@@ -13,6 +13,8 @@ Galaxies in this set have already been classified once through the help of hundr
 
 # **How to use this repository?**
 
+
+
 # **Dataset**
 Data preperation and segrigation are done based on decision tree referenced from [Kaggle](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/overview/the-galaxy-zoo-decision-tree).
 
@@ -283,7 +285,9 @@ History of the model training is stored for the analysis.
 * **Learning Rate : 0.001**
 * **Loss function :** ***Categorical Cross Entropy***
 
-# **Testing**
+# **Testing and Evaluation**
+
+Both models were validated on the `Validation` set, where the accuracy reaches upto ~89%.
 
 # **Analysis**
 
