@@ -252,15 +252,15 @@ The two models are implemented using Keras and Tensorflow. The details of model 
 *   Cost function: Categorical cross entropy
 *   metrics : Accuracy
 
-# Implementing Callbacks
+**Implementing Callbacks**
 
 * In the custom callback function **myCallback**, baseline **val_loss** is taken as **0.2500**, after that this custom callback will be executed  to stop the training.
 
 * The best model will be stored inside **best_model.h5** file with the help of **ModelCheckpoint** callback argument, 
 
-#Training the Model
+**Training the Model**
 
-Training is implemented using fit_generator
+* Training is implemented using fit_generator
 
 > *Arguments :*
 * **Training data**: train_generator 
