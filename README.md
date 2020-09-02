@@ -142,13 +142,11 @@ The dataset of images is segmented into `Train` and `Validation` sets. ~90% of t
 * **Data Classification and image segregation**   
 
    **Classification**
-
-   1. The recorded survey is loaded into a dataframe from the csv.
-   2. Based on the decision tree the galaxy ids corresponding to the three classes are stored into three lists.
+    * The recorded survey is loaded into a dataframe from the csv.
+    * Based on the decision tree the galaxy ids corresponding to the three classes are stored into three lists.
    
    **Images segregation**
-
-     The galaxy images are segregated into three different folders of named corresponding to the classes with the help of lists returned from the previous step.   
+    * The galaxy images are segregated into three different folders of named corresponding to the classes with the help of lists returned from the previous step.   
 
 * **Image Augmentation**
 
