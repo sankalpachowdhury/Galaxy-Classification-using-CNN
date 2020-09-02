@@ -85,7 +85,7 @@ These files can be used to run the final Galaxy Classifier model locally:
 
 * All_in_one.py -- Contains the implementation of all the steps corresponding to the final model building processes (mentioned below). In order to directly implement the trained model with the help of stored weights and biases replace the ***best_model.h5*** with ***best_model-27-08-2020-final.h5*** in the following code of **"All_in_one.py"**, and evaluate.
 
-> **model_param_file = 'best_model.h5' **
+> **model_param_file = 'best_model.h5'**
 
 * CNN_model.py -- Contains CNN model creation
 * data_augmentation.py -- Data augmentation [For this Augmentor class needed ``! pip install Augmentor``]
@@ -150,7 +150,7 @@ Galaxy ids are used as galaxy image name.
 
 Based on the survey as recorded in the [training_solutions_rev1.csv](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data?select=training_solutions_rev1.zip) the galaxy ids are classified into three mentioned category with the help of referenced concepts in **weighting and responses** section, and the following decision tree architecture mentioned in the Galaxy zoo 2 paper.
 
-**NOTE: *Galaxy-IDs are used to map images to the respective labels.* ** 
+**NOTE: Galaxy-IDs are used to map images to the respective labels.**
 
 ![Decision tree](Images/Decisiontree2.PNG)
 
