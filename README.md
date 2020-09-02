@@ -124,7 +124,7 @@ Based on that referenced decision tree concept the images are segregated into th
 * **Image Data** 
 
 [Source](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data?select=images_training_rev1.zip) contains 65000 images of galaxies.
-Image reolution: (424, 424)
+Image file (.jpeg) of 424 x 424 RGB
 Galaxy ids are used as galaxy image name.
 
 * **Labels** 
@@ -176,6 +176,8 @@ The dataset of images is segmented into `Train` and `Validation` sets. ~90% of t
 
 
 # **Models**
+
+The galaxy classification problem is solved by Deep Learning classification methods, using Convolutional Neural Networks (CNN). The CNN models are known to work well with image classification problems. Here, different model architectures are used with different combinations of hyperparameters. The model architectures used are defined in details in the colab notebooks [Tested models](https://github.com/sankalpachowdhury/Galaxy-Classification-using-CNN/tree/master/Model%20testing). After testing with several custom models including open source models like ResNet50. After evaluating the model performances, two optimal models are selected, whose architectures are given below-->
 
 *Model 1 architecture (sequential)*
 ---
@@ -310,6 +312,8 @@ The dataset of images is segmented into `Train` and `Validation` sets. ~90% of t
 >**Output layer:**
 >
 >Softmax layer: No. of units: 3, Activation: Softmax
+
+The two models are implemented using Keras and Tensorflow. The details of model implementations and performances comparison can be found in the [Notebook](Galaxy-Classification-using-CNN/Galaxy-Classification CNN models/Galaxy_classification_CNN_model_comparisons_26_08_20.ipynb)
 
 # **Training**
 
