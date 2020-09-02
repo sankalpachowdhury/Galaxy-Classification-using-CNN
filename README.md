@@ -154,13 +154,13 @@ The dataset of images is segmented into `Train` and `Validation` sets. ~90% of t
   
   **Augmentation techniques used**\
         **1.   Rotation**\
-                * Rotate 90 degree(Probability = 0.5)\
-                * Rotate 270 degree(Probability = 0.5)\
+          * Rotate 90 degree(Probability = 0.5)\
+          * Rotate 270 degree(Probability = 0.5)\
         **2.   Mirroring**\
-                * Horizontal flip(Probability = 0.5)\
-                * Vertical flip(Probability = 0.5)\
+          * Horizontal flip(Probability = 0.5)\
+          * Vertical flip(Probability = 0.5)\
         **3. Resizing**\
-                * Augmented image size = (150,150) | (Probability = 0.5)\
+          * Augmented image size = (150,150) | (Probability = 0.5)\
         Target training samples after augmentation = 8000 for each class,\
         Target validation samples after augmentation = 1000 for each class
 
