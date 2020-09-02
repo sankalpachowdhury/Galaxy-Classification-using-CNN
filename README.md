@@ -174,7 +174,137 @@ The dataset of images is segmented into `Train` and `Validation` sets. ~90% of t
      Target validation samples after augmentation = 1000 for each class
 
 
-# **Model**
+# **Models**
+
+*Model 1 architecture (sequential)*
+---
+*  Filter shape: (3,3)
+
+*  Pool shape(Constant): (2,2)
+
+*  Input shape: (150,150)
+
+*  Batch Normalization parameters(default):**
+
+momentum = 0.99,
+epsilon = 0.001,
+renorm_momentum = 0.99
+
+>**Layer1:** 
+>
+>a. Convolution: No. of filters: 32, 
+>   Activation: RELU, 
+>   Batch normalization
+>
+>b. Max-pool
+
+>**Layer2:** 
+>
+>a. Convolution: No. of filters: 32, 
+>   Activation: RELU, 
+>   Batch normalization
+>   
+>b. Max-pool
+
+>**Layer3:** 
+>
+>a. Convolution: No. of filters: 64, 
+>   Activation: RELU, 
+>   Batch normalization
+>
+>b. Max-pool
+
+>**Layer4:** 
+>
+>a. Convolution: No. of filters: 64, 
+>   Activation: RELU, 
+>   Batch normalization
+>
+>b. Max-pool 
+
+>**Layer5:** 
+>
+>a. Convolution: No. of filters: 128, 
+>   Activation: RELU
+>
+>b. Max-pool
+
+>**Layer6:** Flatten
+
+>**Layer7:**
+>
+>Fully connected layer: No. of nodes: 512, Activation: RELU
+
+>**Layer8:**
+>
+>Fully connected layer: No. of nodes: 128, Activation: RELU
+
+>**Output layer:**
+>
+>Softmax layer: No. of units: 3, Activation: Softmax
+
+---
+
+*Model 2 architecture (sequential)*
+---
+*  Filter shape: (3,3)
+
+*  Pool shape(Constant): (2,2)
+
+*  Input shape: (150,150)
+
+*  Batch Normalization parameters(default):**
+
+momentum = 0.99,
+epsilon = 0.001,
+renorm_momentum = 0.99
+
+>**Layer1:** 
+>
+>a. Convolution: No. of filters: 64, 
+>   Activation: RELU, 
+>
+>b. Max-pool
+
+>**Layer2:** 
+>
+>a. Convolution: No. of filters: 64, 
+>   Activation: RELU, 
+>   
+>b. Max-pool
+
+>**Layer3:** 
+>
+>a. Convolution: No. of filters: 128, 
+>   Activation: RELU, 
+>
+>b. Max-pool
+
+>**Layer4:** 
+>
+>a. Convolution: No. of filters: 128, 
+>   Activation: RELU, 
+>
+>b. Max-pool 
+
+>**Layer5:** 
+>
+>a. Convolution: No. of filters: 128, 
+>   Activation: RELU
+>
+>b. Max-pool
+
+>**Layer6:** Flatten
+
+>**Layer7:** Dropout layer(Probability = 0.5)
+
+>**Layer8:**
+>
+>Fully connected layer: No. of nodes: 512, Activation: RELU
+
+>**Output layer:**
+>
+>Softmax layer: No. of units: 3, Activation: Softmax
 
 # **Training**
 
