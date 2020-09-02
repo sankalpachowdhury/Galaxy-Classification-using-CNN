@@ -262,6 +262,8 @@ Loss function : Categorical Cross Entropy
 
 # **Analysis**
 
+![graph1](Images/final_model.png)
+
 The model trainings are visualized in the colab notebook, which indicates that the *Model 2* performance is much stable than *Model 1*, which validates *Model 2* to be finalized. The implementation of *Model 2* has been done in a seperate notebook [Galaxy_classification_CNN_final_model_26_08_20](https://github.com/sankalpachowdhury/Galaxy-Classification-using-CNN/blob/master/Galaxy-Classification%20CNN%20models/Galaxy_classification_CNN_final_model_26_08_20.ipynb).
 
 # **Reference**
