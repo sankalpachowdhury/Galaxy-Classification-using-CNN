@@ -313,9 +313,10 @@ The galaxy classification problem is solved by Deep Learning classification meth
 >
 >Softmax layer: No. of units: 3, Activation: Softmax
 
-The two models are implemented using Keras and Tensorflow. The details of model implementations and performances comparison can be found in the [Notebook](https://github.com/sankalpachowdhury/Galaxy-Classification-using-CNN/blob/master/Galaxy-Classification%20CNN%20models/Galaxy_classification_CNN_model_comparisons_26_08_20.ipynb)
+The two models are implemented using Keras and Tensorflow. The details of model implementations and performances comparison can be found in the [Galaxy_classification_CNN_model_comparisons_26_08_20](https://github.com/sankalpachowdhury/Galaxy-Classification-using-CNN/blob/master/Galaxy-Classification%20CNN%20models/Galaxy_classification_CNN_model_comparisons_26_08_20.ipynb). The model trainings are visualized in the colab notebook, which indicates that the *Model 2* performance is much stable than *Model 1*, which validates *Model 2* to be finalized. The implementation of *Model 2* has been done in a seperate notebook[Galaxy_classification_CNN_final_model_26_08_20](https://github.com/sankalpachowdhury/Galaxy-Classification-using-CNN/blob/master/Galaxy-Classification%20CNN%20models/Galaxy_classification_CNN_final_model_26_08_20.ipynb).
 
 # **Training**
+
 
 # **Testing**
 
