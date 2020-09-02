@@ -276,7 +276,7 @@ History of the model training is stored for the analysis.
 
 **Hyperparameters:** 
 
-* **Minibatch size: 64*
+* **Minibatch size: 64**
 * **Epochs: 10**
 * **Steps per Epochs : 8**
 * **Optimizer :** ***Adam***
