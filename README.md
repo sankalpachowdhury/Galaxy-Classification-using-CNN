@@ -246,6 +246,34 @@ The two models are implemented using Keras and Tensorflow. The details of model 
 
 # **Training**
 
+**Model compilation and Introducing optimization technique**
+
+*   Optimizer: **Adam**(Learning rate = 0.001, beta1 = 0.9, beta2 = 0.999, epsilon = 1e-07 
+*   Cost function: Categorical cross entropy
+*   metrics : Accuracy
+
+# Implementing Callbacks
+
+* In the custom callback function **myCallback**, baseline **val_loss** is taken as **0.2500**, after that this custom callback will be executed  to stop the training.
+
+* The best model will be stored inside **best_model.h5** file with the help of **ModelCheckpoint** callback argument, 
+
+#Training the Model
+
+Training is implemented using fit_generator
+
+> *Arguments :*
+* **Training data**: train_generator 
+* **Validation data**: validation_generator
+* **Epochs**: 50
+* **Callbacks**: Custom_callback, Model_checkpoint 
+* **Verbose**: 1
+
+History of the model training is stored for the analysis.
+
+>Early Stopping object, where earlystopping baseline was taken 0.2791 for validation loss, but not used
+>Instead, custom callback was implemented for the model
+
 Hyperparameters: 
 
 Minibatch size: 64
