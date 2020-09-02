@@ -155,8 +155,10 @@ The dataset of images is segmented into `Train` and `Validation` sets. ~90% of t
   **Augmentation techniques used**
         
      **1.   Rotation**
-        * Rotate 90 degree(Probability = 0.5)
-        * Rotate 270 degree(Probability = 0.5)
+     
+     * Rotate 90 degree(Probability = 0.5)
+        
+     * Rotate 270 degree(Probability = 0.5)
         
      **2.   Mirroring**
         * Horizontal flip(Probability = 0.5)
