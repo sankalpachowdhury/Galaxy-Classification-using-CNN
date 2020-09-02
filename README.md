@@ -125,9 +125,9 @@ Based on that referenced decision tree concept the images are segregated into th
 
 * **Image Data** [Source](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data?select=images_training_rev1.zip) contains 65000 images of galaxies.
 
-* **Labels** Based on the survey as recorded in the "filename" the images are classified into three mentioned category with the help of referenced concepts in **weighting and responses** section, and the following decision tree architecture mentioned in the Galaxy zoo 2 paper.
+* **Labels** Based on the survey as recorded in the [training_solutions_rev1.csv](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data?select=training_solutions_rev1.zip) the images are classified into three mentioned category with the help of referenced concepts in **weighting and responses** section, and the following decision tree architecture mentioned in the Galaxy zoo 2 paper.
 
-[img2](Images/Decisiontree2.PNG)* 
+![Decision tree](Images/Decisiontree2.PNG)* 
 
 # **Preprocessing**
 
