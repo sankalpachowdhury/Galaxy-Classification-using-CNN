@@ -99,7 +99,6 @@ The Dataset is hosted on a kaggle challenge. [Galazy Zoo](https://www.kaggle.com
 The Galaxy zoo 2 survey was done based on some interconnected decision steps of significant questions, as shown: 
 ![img1](Images/Decisiontree.PNG)
 
-
 **Weighting the responses**
 
 For the first set of responses (smooth, features/disk, star/artifact), the values in each category are simply the likelihood of the galaxy falling in each category, are summed to 1.0. For each subsequent question, the probabilities are first computed (these will sum to 1.0) and then multiplied by the value which led to that new set of responses. 
@@ -118,15 +117,17 @@ Class 7.3 = 0.80 * 0.25 = 0.20
 `
 The reason for this weighting is to emphasize that a good solution must get the high-level, large-scale morphology categories correct. The best solutions, though, will also have high levels of accuracy on the detailed solutions that are further down the decision tree.
 
-Based on that referenced decision tree concept the images are segregated into three main classes of Hubbles Tuning fork, which are **1. Elliptical, 2. Lenticular, 3. Spiral**
+Based on that referenced decision tree concept the images are segregated into three main classes of Hubbles Tuning fork, which are  
+
+**1. Elliptical, 2. Lenticular, 3. Spiral**
 
 ![tuningfork](Images/hubble_t.jpg)
 
 * **Image Data** [Source](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data?select=images_training_rev1.zip) contains 65000 images of galaxies.
 
-* **Labels**
+* **Labels** Based on the survey as recorded in the "filename" the images are classified into three mentioned category with the help of referenced concepts in **weighting and responses** section, and the following decision tree architecture mentioned in the Galaxy zoo 2 paper.
 
-* 
+[img2](Images/Decisiontree2.PNG)* 
 
 # **Preprocessing**
 
