@@ -120,7 +120,11 @@ Based on that referenced decision tree concept the images are segregated into th
 
 ![tuningfork](Images/hubble_t.jpg)
 
-* **Image Data** [Source](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data?select=images_training_rev1.zip) contains 65000 images of galaxies.
+* **Image Data** 
+
+[Source](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data?select=images_training_rev1.zip) contains 65000 images of galaxies.
+Image reolution: (424, 424)
+Galaxy ids are used as galaxy image name.
 
 * **Labels** 
 
@@ -137,10 +141,13 @@ The dataset of images is segmented into `Train` and `Validation` sets. ~90% of t
 # **Preprocessing**
 * **Data Classification and image segregation**  
 **Classification**
-Steps
-1. ksdjfhk
 
-* **fgueg**
+        1. The recorded survey is loaded into a dataframe from the csv.
+        2. Based on the decision tree the galaxy ids corresponding to the three classes are stored into three lists.
+
+**Images segregation**
+          
+         The three different classes of galaxy images are segmented into three different folders of named corresponding to the classes with the help of lists returned from the previous step.   
 
 
 # **Model**
