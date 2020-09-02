@@ -184,11 +184,13 @@ The dataset of images is segmented into `Train` and `Validation` sets. ~90% of t
 
 *  Input shape: (150,150)
 
-*  Batch Normalization parameters(default):**
-
-momentum = 0.99,
-epsilon = 0.001,
-renorm_momentum = 0.99
+*  Batch Normalization parameters(default):
+   
+   * momentum = 0.99,
+   
+   * epsilon = 0.001,
+   
+   * renorm_momentum = 0.99
 
 >**Layer1:** 
 >
