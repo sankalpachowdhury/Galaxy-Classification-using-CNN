@@ -100,15 +100,15 @@ These files can be used to run the final Galaxy Classifier model locally:
 
 **Weights and bias**-> Contains the weights and biases of the final model after optimization.
 
-* best_model-27-08-2020-final.h5* -- Contains the weights and bias for final model, can be directly loaded and implemented in the notebooks and in the "All_in_one.py", for evaluation and classification.
+* *best_model-27-08-2020-final.h5* -- Contains the weights and bias for final model, can be directly loaded and implemented in the notebooks and in the "All_in_one.py", for evaluation and classification.
 
 # **Dataset**
 
-Data preperation and segrigation are done based on decision tree referenced from [Kaggle](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/overview/the-galaxy-zoo-decision-tree).
+Data preperation and segrigation are done based on decision tree referenced from [Dataset](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/overview/the-galaxy-zoo-decision-tree).
 
 * **Dataset Source:** 
 
-The Dataset is hosted on a kaggle challenge. [Galazy Zoo](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data)
+The Dataset is hosted on a kaggle challenge. [Kaggle Galazy Zoo](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data)
 
 * **Decision tree** [Galaxy zoo2 Paper](https://arxiv.org/abs/1308.3496)
 
