@@ -148,7 +148,7 @@ The dataset of images is segmented into `Train` and `Validation` sets. ~90% of t
    
    **Images segregation**
 
-   The galaxy images are segregated into three different folders of named corresponding to the classes with the help of lists returned from the previous step.   
+     The galaxy images are segregated into three different folders of named corresponding to the classes with the help of lists returned from the previous step.   
 
 * **Image Augmentation**
 
