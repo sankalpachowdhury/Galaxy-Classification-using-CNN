@@ -159,7 +159,7 @@ The dataset of images is segmented into `Train` and `Validation` sets. ~90% of t
         **2.   Mirroring**\
           * Horizontal flip(Probability = 0.5)\
           * Vertical flip(Probability = 0.5)\
-        **3. Resizing**\
+        **3.   Resizing**\
           * Augmented image size = (150,150) | (Probability = 0.5)\
         Target training samples after augmentation = 8000 for each class,\
         Target validation samples after augmentation = 1000 for each class
