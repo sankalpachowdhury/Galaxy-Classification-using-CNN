@@ -83,19 +83,30 @@ $ git clone https://github.com/sankalpachowdhury/Galaxy-Classification-using-CNN
 **Python files**
 These files can be used to run the final Galaxy Classifier model locally:
 
-|   ├── All_in_one.py -- Contains the the implementation of all the steps corresponding to the final model building processes (mentioned below) 
-│   ├── CNN_model.py -- Contains CNN model creation
-│   ├── data_augmentation.py -- Data augmentation [For this Augmentor class needed (! pip install Augmentor]
-│   ├── data_segmentation.py
-│   ├── data_storing.py
-│   ├── image_generator.py
-│   ├── images_visualization.py
-│   ├── intermediate_activation_vis.py
-│   ├── model_compilation_training.py
-│   ├── model_evaluation_visualization.py
-│   └── modules.py
+* All_in_one.py -- Contains the the implementation of all the steps corresponding to the final model building processes (mentioned below) 
+
+* CNN_model.py -- Contains CNN model creation
+
+* data_augmentation.py -- Data augmentation [For this Augmentor class needed (! pip install Augmentor]
+
+* data_segmentation.py -- Segmenting images based on survey reult and decision tree discussed later. 
+
+* data_storing.py -- loading and stowrign raw data
+
+* image_generator.py -- Implementing image_generator
+
+* images_visualization.py -- Images visualzation steps
+
+* intermediate_activation_vis.py -- Visualizing intermediate activation layers
+
+* model_compilation_training.py -- Model compilation and training
+
+* model_evaluation_visualization.py -- Trained model evaluation
+
+* modules.py -- Contains the necessry python modules
 
 # **Dataset**
+
 Data preperation and segrigation are done based on decision tree referenced from [Kaggle](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/overview/the-galaxy-zoo-decision-tree).
 
 * **Dataset Source:** 
