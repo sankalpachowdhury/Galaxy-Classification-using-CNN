@@ -101,17 +101,18 @@ The Galaxy zoo 2 survey was done based on some interconnected decision steps of 
 For the first set of responses (smooth, features/disk, star/artifact), the values in each category are simply the likelihood of the galaxy falling in each category, are summed to 1.0. For each subsequent question, the probabilities are first computed (these will sum to 1.0) and then multiplied by the value which led to that new set of responses. 
 
 Example: Suppose for a galaxy 80% of users identify it as smooth, 15% as having features/disk, and 5% as a star/artifact.
-`
-Class1.1 = 0.80
-Class1.2 = 0.15
-Class1.3 = 0.05
-`
+
+        
+        Class1.1 = 0.80
+        Class1.2 = 0.15
+        Class1.3 = 0.05
+        
 For the 80% of users that identified the galaxy as "smooth", they also recorded responses for the galaxy's relative roundness. These votes were for 50% completely round, 25% in-between, and 25% cigar-shaped. The values in the solution file are thus:
-`
-Class 7.1 = 0.80 * 0.50 = 0.40
-Class 7.2 = 0.80 * 0.25 = 0.20
-Class 7.3 = 0.80 * 0.25 = 0.20
-`
+
+        Class 7.1 = 0.80 * 0.50 = 0.40
+        Class 7.2 = 0.80 * 0.25 = 0.20
+        Class 7.3 = 0.80 * 0.25 = 0.20
+
 The reason for this weighting is to emphasize that a good solution must get the high-level, large-scale morphology categories correct. The best solutions, though, will also have high levels of accuracy on the detailed solutions that are further down the decision tree.
 
 Based on that referenced decision tree concept the images are segregated into three main classes of Hubbles Tuning fork, which are  
