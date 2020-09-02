@@ -120,6 +120,8 @@ The reason for this weighting is to emphasize that a good solution must get the 
 
 Based on that referenced decision tree concept the images are segregated into three main classes of Hubbles Tuning fork, which are **1. Elliptical, 2. Lenticular, 3. Spiral**
 
+![tuningfork](Images/hubble_t.jpg)
+
 * **Image Data** [Source](https://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge/data?select=images_training_rev1.zip) contains 65000 images of galaxies.
 
 * **Labels**
