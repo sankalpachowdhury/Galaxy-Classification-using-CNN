@@ -73,14 +73,14 @@ $ git clone https://github.com/sankalpachowdhury/Galaxy-Classification-using-CNN
     └── best_model (2).h5
 ```
 
-**Galaxy-Classification CNN models** folder contains the Notebooks corrosponding to the finalized models.
+**Galaxy-Classification CNN models**-> folder contains the Notebooks corrosponding to the finalized models.
 
 * Galaxy_classification_CNN_final_model_26_08_20.ipynb -- Final model
 * Galaxy_classification_CNN_model_comparisons_26_08_20.ipynb -- Model comparison
 
 **Model testing** contains all tested models and other notebooks.
 
-**Python files**
+**Python files**->
 These files can be used to run the final Galaxy Classifier model locally:
 
 * All_in_one.py -- Contains the the implementation of all the steps corresponding to the final model building processes (mentioned below). In order to directly implement the trained model with the help of stored weights and biases replace the ***best_model.h5*** with ***best_model-27-08-2020-final.h5*** in the following code of **"All_in_one.py"**, and evaluate.
@@ -98,7 +98,7 @@ These files can be used to run the final Galaxy Classifier model locally:
 * model_evaluation_visualization.py -- Trained model evaluation
 * modules.py -- Contains the necessry python modules
 
-**Weights and bias** Contains the weights and biases of the final model after optimization.
+**Weights and bias**-> Contains the weights and biases of the final model after optimization.
 
 * best_model-27-08-2020-final.h5* -- Contains the weights and bias for final model, can be directly loaded and implemented in the notebooks and in the "All_in_one.py", for evaluation and classification.
 
@@ -385,5 +385,5 @@ The final model training performance is given below:
 ![graph1](Images/final_model.png)
 
 # **Reference**
-1. https://blog.galaxyzoo.org/category/paper/
-2. Kaggle Galaxy zoo competition guide: https://github.com/benanne/kaggle-galaxies
+1. Galaxy zoo 2 paper: https://blog.galaxyzoo.org/category/paper/
+2. Kaggle Galaxy: https://github.com/benanne/kaggle-galaxies
