@@ -83,12 +83,12 @@ $ git clone https://github.com/sankalpachowdhury/Galaxy-Classification-using-CNN
 **Python files**->
 These files can be used to run the final Galaxy Classifier model locally:
 
-* All_in_one.py -- Contains the the implementation of all the steps corresponding to the final model building processes (mentioned below). In order to directly implement the trained model with the help of stored weights and biases replace the ***best_model.h5*** with ***best_model-27-08-2020-final.h5*** in the following code of **"All_in_one.py"**, and evaluate.
+* All_in_one.py -- Contains the implementation of all the steps corresponding to the final model building processes (mentioned below). In order to directly implement the trained model with the help of stored weights and biases replace the ***best_model.h5*** with ***best_model-27-08-2020-final.h5*** in the following code of **"All_in_one.py"**, and evaluate.
 
 > **model_param_file = 'best_model.h5' **
 
 * CNN_model.py -- Contains CNN model creation
-* data_augmentation.py -- Data augmentation [For this Augmentor class needed (! pip install Augmentor]
+* data_augmentation.py -- Data augmentation [For this Augmentor class needed ``! pip install Augmentor``]
 * data_segmentation.py -- Segmenting images based on survey reult and decision tree discussed later. 
 * data_storing.py -- loading and stowrign raw data
 * image_generator.py -- Implementing image_generator
