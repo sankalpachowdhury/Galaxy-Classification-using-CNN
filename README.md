@@ -81,9 +81,6 @@ Learning Rate : 0.001
 Loss function : Categorical Cross Entropy
 
 
-![img1](Images/Decisiontree.PNG)
-![img2](Images/Decisiontree2.PNG)
-![tuningfork](Images/hubble_t.jpg)
 
 # **How to use this repository?**
 
@@ -138,7 +135,12 @@ Based on the survey as recorded in the [training_solutions_rev1.csv](https://www
 The dataset of images is segmented into `Train` and `Validation` sets. ~90% of the images are taken into `Training` set and the remaining for the `Validation` set.
 
 # **Preprocessing**
+* **Data Classification and image segregation**  
+**Classification**
+Steps
+1. ksdjfhk
 
+* **fgueg**
 
 
 # **Model**
